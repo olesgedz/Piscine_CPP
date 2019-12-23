@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = Phonebook
 
 FLAGS = -g
 CC = clang++
@@ -24,7 +24,7 @@ HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(HEADERS_LIST))
 DIRECTORY =  $(shell pwd)
 
 SRCS_DIRECTORY = ./
-SRCS_LIST = megaphone.cpp
+SRCS_LIST = $(wildcard *.cpp)
 
 OBJS_DIRECTORY = objects/
 OBJS_LIST = $(patsubst %.cpp, %.o, $(SRCS_LIST))
